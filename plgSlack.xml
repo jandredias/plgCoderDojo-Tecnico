@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+	<name>plgLoginSlack</name>
+	<author>André Dias</author>
+	<creationDate>October 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>j.andre.dias@tecnico.ulisboa.pt</authorEmail>
+	<authorUrl>http://jdiastk.com/</authorUrl>
+	<version>1.0.0</version>
+	<description>Sends information to Slack</description>
+	<files>
+		<filename plugin="plgSlack">plgSlack.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="url" type="text"
+					default=""
+					description="Slack API URL"
+					label="Slack API URL"
+					size="5"
+				/>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
